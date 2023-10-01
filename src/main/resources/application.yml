@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: microservice
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/realm-1
+          jwk-set-uri: http://localhost:8081/realms/realm-1/protocol/openid-connect/certs
+#  security:
+#    user:
+#      name: reza
+#      password: 1234
+#  datasource:
+#    password: DatabasePassword
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/reza3524/spring-cloud-config-server-v1
+#          search-paths:
+#            - station*
+#          repos:
+#            perf:
+#              pattern: '*/perf'
+#              uri: https://github.com/reza3524/spring-cloud-config-server-v2
+#              search-paths:
+#                - station*
+
+#encrypt:
+#  key: APODNU3093r2rbjzxcn09u213asdhy08WRFH
